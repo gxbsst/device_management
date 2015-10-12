@@ -183,8 +183,8 @@ class TcpCommucation(BasePlugin):
     def __init__(self, app):
         BasePlugin.__init__(self, app)
         # host, port
-        order_server_address = ('localhost', 33333)
-        status_server_address = ('localhost', 33334)
+        order_server_address = ('localhost', 22222)
+        status_server_address = ('localhost',22223)
         self.task_status_server = TaskStatusServer("Task-Status-Server-Thread",
                                                    status_server_address,
                                                    5)
