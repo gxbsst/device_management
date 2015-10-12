@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<devices xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <device name="NC-Device-01" host="192.168.5.52" port="502" id="2">
+    <operation name="write_program_num">
+      <register address="14" values="{pronum-value}" flag="write" />
+      <register address="36" values="{pronum-value}" flag="read"></register>
+    </operation>
+    <operation name="before_unclamp">
+      <register address="15" values="[1]" flag="write" />
+      <register address="15" values="[1]" flag="read"></register>
+      <register address="16" values="[7]" flag="read"></register>
+    </operation>
+    <operation name="before_clamp">
+      <register address="15" values="[2]" flag="write" />
+      <register address="15" values="[2]" flag="read"></register>
+      <register address="16" values="[11]" flag="read"></register>
+    </operation>
+    <operation name="execute_program">
+      <register address="15" values="[3]" flag="write" />
+      <register address="15" values="[3]" flag="read"></register>
+      <register address="16" values="[20]" flag="read"></register>
+    </operation>
+    <operation name="after_unclamp">
+      <register address="15" values="[4]" flag="write" />
+      <register address="15" values="[4]" flag="read"></register>
+      <register address="16" values="[24]" flag="read"></register>
+    </operation>
+    <operation name="after_clamp">
+      <register address="15" values="[5]" flag="write" />
+      <register address="15" values="[5]" flag="read"></register>
+      <register address="16" values="[0]" flag="read"></register>
+    </operation>
+  </device>
+  <device name="NC-Device-02" host="192.168.5.53" port="502" id="2">
+    <operation name="write_program_num">
+      <register address="14" values="{pronum-value}" flag="write" />
+      <register address="36" values="{pronum-value}" flag="read"></register>
+    </operation>
+    <operation name="before_unclamp">
+      <register address="15" values="[1]" flag="write" />
+      <register address="15" values="[1]" flag="read"></register>
+      <register address="16" values="[7]" flag="read"></register>
+    </operation>
+    <operation name="before_clamp">
+      <register address="15" values="[2]" flag="write" />
+      <register address="15" values="[2]" flag="read"></register>
+      <register address="16" values="[11]" flag="read"></register>
+    </operation>
+    <operation name="execute_program">
+      <register address="15" values="[3]" flag="write" />
+      <register address="15" values="[3]" flag="read"></register>
+      <register address="16" values="[20]" flag="read"></register>
+    </operation>
+    <operation name="after_unclamp">
+      <register address="15" values="[4]" flag="write" />
+      <register address="15" values="[4]" flag="read"></register>
+      <register address="16" values="[24]" flag="read"></register>
+    </operation>
+    <operation name="after_clamp">
+      <register address="15" values="[5]" flag="write" />
+      <register address="15" values="[5]" flag="read"></register>
+      <register address="16" values="[0]" flag="read"></register>
+    </operation>
+  </device>
+  <device name="NC-Device-03" host="127.0.0.1" port="502" id="1">
+    <operation name="write_program_num">
+      <register address="14" values="{pronum-value}" flag="write" />
+      <register address="36" values="{pronum-value}" flag="read"></register>
+    </operation>
+    <operation name="before_unclamp">
+      <register address="15" values="[1]" flag="write" />
+      <register address="15" values="[1]" flag="read"></register>
+      <register address="16" values="[7]" flag="read"></register>
+    </operation>
+    <operation name="before_clamp">
+      <register address="15" values="[2]" flag="write" />
+      <register address="15" values="[2]" flag="read"></register>
+      <register address="16" values="[11]" flag="read"></register>
+    </operation>
+    <operation name="execute_program">
+      <register address="15" values="[3]" flag="write" />
+      <register address="15" values="[3]" flag="read"></register>
+      <register address="16" values="[20]" flag="read"></register>
+    </operation>
+    <operation name="after_unclamp">
+      <register address="15" values="[4]" flag="write" />
+      <register address="15" values="[4]" flag="read"></register>
+      <register address="16" values="[24]" flag="read"></register>
+    </operation>
+    <operation name="after_clamp">
+      <register address="15" values="[5]" flag="write" />
+      <register address="15" values="[5]" flag="read"></register>
+      <register address="16" values="[0]" flag="read"></register>
+    </operation>
+  </device>
+  <device name="NC-Device-04" host="127.0.0.1" port="502" id="1">
+    <operation name="write_program_num">
+      <register address="14" values="{pronum-value}" flag="write" />
+      <register address="36" values="{pronum-value}" flag="read"></register>
+    </operation>
+    <operation name="before_unclamp">
+      <register address="15" values="[1]" flag="write" />
+      <register address="15" values="[1]" flag="read"></register>
+      <register address="16" values="[7]" flag="read"></register>
+    </operation>
+    <operation name="before_clamp">
+      <register address="15" values="[2]" flag="write" />
+      <register address="15" values="[2]" flag="read"></register>
+      <register address="16" values="[11]" flag="read"></register>
+    </operation>
+    <operation name="execute_program">
+      <register address="15" values="[3]" flag="write" />
+      <register address="15" values="[3]" flag="read"></register>
+      <register address="16" values="[20]" flag="read"></register>
+    </operation>
+    <operation name="after_unclamp">
+      <register address="15" values="[4]" flag="write" />
+      <register address="15" values="[4]" flag="read"></register>
+      <register address="16" values="[24]" flag="read"></register>
+    </operation>
+    <operation name="after_clamp">
+      <register address="15" values="[5]" flag="write" />
+      <register address="15" values="[5]" flag="read"></register>
+      <register address="16" values="[0]" flag="read"></register>
+    </operation>
+  </device>
+  <device name="NC-Device-05" host="127.0.0.1" port="502" id="1">
+    <operation name="write_program_num">
+      <register address="14" values="{pronum-value}" flag="write" />
+      <register address="36" values="{pronum-value}" flag="read"></register>
+    </operation>
+    <operation name="before_unclamp">
+      <register address="15" values="[1]" flag="write" />
+      <register address="15" values="[1]" flag="read"></register>
+      <register address="16" values="[7]" flag="read"></register>
+    </operation>
+    <operation name="before_clamp">
+      <register address="15" values="[2]" flag="write" />
+      <register address="15" values="[2]" flag="read"></register>
+      <register address="16" values="[11]" flag="read"></register>
+    </operation>
+    <operation name="execute_program">
+      <register address="15" values="[3]" flag="write" />
+      <register address="15" values="[3]" flag="read"></register>
+      <register address="16" values="[20]" flag="read"></register>
+    </operation>
+    <operation name="after_unclamp">
+      <register address="15" values="[4]" flag="write" />
+      <register address="15" values="[4]" flag="read"></register>
+      <register address="16" values="[24]" flag="read"></register>
+    </operation>
+    <operation name="after_clamp">
+      <register address="15" values="[5]" flag="write" />
+      <register address="15" values="[5]" flag="read"></register>
+      <register address="16" values="[0]" flag="read"></register>
+    </operation>
+  </device>
+  <device name="NC-Device-06" host="127.0.0.1" port="502" id="1">
+    <operation name="write_program_num">
+      <register address="14" values="{pronum-value}" flag="write" />
+      <register address="36" values="{pronum-value}" flag="read"></register>
+    </operation>
+    <operation name="before_unclamp">
+      <register address="15" values="[1]" flag="write" />
+      <register address="15" values="[1]" flag="read"></register>
+      <register address="16" values="[7]" flag="read"></register>
+    </operation>
+    <operation name="before_clamp">
+      <register address="15" values="[2]" flag="write" />
+      <register address="15" values="[2]" flag="read"></register>
+      <register address="16" values="[11]" flag="read"></register>
+    </operation>
+    <operation name="execute_program">
+      <register address="15" values="[3]" flag="write" />
+      <register address="15" values="[3]" flag="read"></register>
+      <register address="16" values="[20]" flag="read"></register>
+    </operation>
+    <operation name="after_unclamp">
+      <register address="15" values="[4]" flag="write" />
+      <register address="15" values="[4]" flag="read"></register>
+      <register address="16" values="[24]" flag="read"></register>
+    </operation>
+    <operation name="after_clamp">
+      <register address="15" values="[5]" flag="write" />
+      <register address="15" values="[5]" flag="read"></register>
+      <register address="16" values="[0]" flag="read"></register>
+    </operation>
+  </device>
+  <device name="Robot-Device-01" host="127.0.0.1" port="502" id="1">
+    <operation name="d8_robot_status_executing">
+      <register address="4115" values="1" flag="read" />
+    </operation>
+    <operation name="d8_robot_status_idle">
+      <register address="4115" values="2" flag="read" />
+    </operation>
+    <operation name="d5_unloading_prepare">
+      <register address="4112" values="{location-no}" flag="write" />
+    </operation>
+    <operation name="d5_loading_prepare">
+      <register address="4112" values="{location-no}" flag="write" />
+    </operation>
+    <operation name="d6_unloading_nc_unlock">
+      <register address="4113" values="{location-no}" flag="write" />
+    </operation>
+    <operation name="d6_loading_nc_lock">
+      <register address="4113" values="{location-no}" flag="write" />
+    </operation>
+    <operation name="d7_unloading_robot_grab_complete">
+      <register address="4114" values="{location-no}" flag="read" />
+    </operation>
+    <operation name="d7_unloading_robot_leaved_complete">
+      <register address="4114" values="{location-no}" flag="read" />
+    </operation>
+    <operation name="d7_loading_robot_placed_complete">
+      <register address="4114" values="{location-no}" flag="read" />
+    </operation>
+    <operation name="d7_loading_robot_leaved_complete">
+      <register address="4114" values="{location-no}" flag="read" />
+    </operation>
+  </device>
+</devices>
