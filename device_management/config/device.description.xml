@@ -226,10 +226,20 @@
     <operation name="read_status_free">
       <register address="6500" values="[1]" flag="read" timeout="0"/> 
     </operation>
-    <operation name="write_in_stock">
-      <register address="6496" values="[1]" flag="write"/>
+    <operation name="write_in_stock_location">
       <register address="6497" values="{location}" flag="write"/>
+    </operation>
+    <operation name="read_in_stock_location">
+      <register address="6497" values="{location}" flag="write"/>
+    </operation>
+    <operation name="write_in_stock_outlet">
+      <register address="6498" values="{outlet}" flag="write" />
+    </operation>
+    <operation name="read_in_stock_outlet">
       <register address="6498" values="{outlet}" flag="write"/>
+    </operation>
+    <operation name="write_in_stock_action">
+      <register address="6496" values="[1]" flag="write" />
     </operation>
     <operation name="read_in_stock_work_status">
       <register address="6502" values="[1]" flag="read"/>
@@ -237,10 +247,20 @@
      <operation name="write_in_stock_done_status">
       <register address="6502" values="[5]" flag="write"/>
     </operation>
-    <operation name="write_out_stock">
-      <register address="6496" values="[2]" flag="write"/>
+    <operation name="write_out_stock_location">
       <register address="6497" values="{location}" flag="write"/>
+    </operation>
+    <operation name="read_out_stock_location">
+      <register address="6497" values="{location}" flag="write"/>
+    </operation>
+    <operation name="write_out_stock_outlet">
       <register address="6498" values="{outlet}" flag="write"/>
+    </operation>
+    <operation name="read_out_stock_outlet">
+      <register address="6498" values="{outlet}" flag="write"/>
+    </operation>
+    <operation name="write_out_stock_action">
+      <register address="6496" values="[2]" flag="write"/>
     </operation>
     <operation name="read_out_stock_work_status">
       <register address="6502" values="[2]" flag="read"/>
@@ -248,5 +268,9 @@
     <operation name="write_out_stock_done_status">
       <register address="6502" values="[5]" flag="write"/>
     </operation>
+  </device>
+
+  <device name="Robot-Device-02" host="192.168.5.10" port="502" id="1">
+
   </device>
 </devices>

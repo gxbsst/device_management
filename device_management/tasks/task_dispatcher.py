@@ -8,7 +8,7 @@ from task_thread_pool import TaskThreadPool
 
 class TaskDispatcher:
     prefix = "Task"
-    num_of_threads = 5
+    num_of_threads = 1
 
     def __init__(self, devices, task_results_queue):
         if devices is None or not isinstance(devices, list):

@@ -9,15 +9,24 @@ class TcpRequestParser:
 
         if action == 'in':
             return [
-                ("PilingCar-Device-01", "read_status_free", {}),
-                ("PilingCar-Device-01", "write_in_stock", {'location': [location], 'outlet': [outlet]}),
+                # in stock
+                ("PilingCar-Device-01", "read_status_free", {}), # 堆垛车是否空闲
+                ("PilingCar-Device-01", "write_in_stock_location", {'location': [location]}),  # 库位
+                ("PilingCar-Device-01", "read_in_stock_location", {'location': [location]}),  # 检查库位是否正确
+                ("PilingCar-Device-01", "write_in_stock_outlet", {'outlet': [outlet]}),  # 写入料口
+                ("PilingCar-Device-01", "read_in_stock_outlet", {'outlet': [outlet]}),  #  读入料口
+                ("PilingCar-Device-01", "write_in_stock_action", {}),
                 ("PilingCar-Device-01", "read_in_stock_work_status", {}),
                 ("PilingCar-Device-01", "write_in_stock_done_status", {})
             ]
         else:
             return [
                 ("PilingCar-Device-01", "read_status_free", {}),
-                ("PilingCar-Device-01", "write_out_stock", {'location': [location], 'outlet': [outlet]}),
+                ("PilingCar-Device-01", "write_out_stock_location", {'location': [location]}),
+                ("PilingCar-Device-01", "read_out_stock_location", {'location': [location]}),
+                ("PilingCar-Device-01", "write_out_stock_outlet", {'outlet': [outlet]}),
+                ("PilingCar-Device-01", "read_out_stock_outlet", {'outlet': [outlet]}),
+                ("PilingCar-Device-01", "write_out_stock_action", {}),
                 ("PilingCar-Device-01", "read_out_stock_work_status", {}),
                 ("PilingCar-Device-01", "write_out_stock_done_status", {})
             ]
